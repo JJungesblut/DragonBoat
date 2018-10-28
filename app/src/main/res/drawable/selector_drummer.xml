@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- focused hier bilder anpassen-->
+    <item android:state_focused="true" android:state_pressed="true"
+        android:drawable="@drawable/btn_front_focused" />
+    <!-- pushed -->
+    <item android:state_focused="false" android:state_pressed="true"
+        android:drawable="@drawable/btn_front_pushed" />
+    <!-- unpushed -->
+    <item android:drawable="@drawable/btn_front_unpushed" />
+</selector>

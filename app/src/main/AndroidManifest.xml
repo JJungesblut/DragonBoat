@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.LeafApps.dragonboat">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <!-- Include required permissions for Google Mobile Ads to run-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-sdk  android:minSdkVersion="9" tools:overrideLibrary="com.google.android.gms" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!--This meta-data tag is required to use Google Play Services.-->
+        <meta-data android:name="com.google.android.gms.version"
+                   android:value="@integer/google_play_services_version" />
+        <!--Include the AdActivity configChanges and theme. -->
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+
+
+
+        <activity
+            android:name="com.LeafApps.dragonboat.activities.MainActivity"
+            android:label="@string/app_name"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.LeafApps.dragonboat.activities.BoatInsert"
+            android:label="@string/title_activity_boat_insert"
+            android:parentActivityName="com.LeafApps.dragonboat.activities.MainActivity"
+            android:windowSoftInputMode="adjustPan"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.LeafApps.dragonboat.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.LeafApps.dragonboat.activities.BoatsShowActivity"
+            android:label="@string/title_activity_boats_show"
+            android:parentActivityName="com.LeafApps.dragonboat.activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.LeafApps.dragonboat.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.LeafApps.dragonboat.activities.CrewShowActivity"
+            android:label="@string/title_activity_crew_show"
+            android:parentActivityName="com.LeafApps.dragonboat.activities.BoatsShowActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.LeafApps.dragonboat.activities.BoatsShowActivity" />
+        </activity>
+        <activity
+            android:name="com.LeafApps.dragonboat.activities.ChronometerActivity"
+            android:label="@string/title_activity_chronometer"
+            android:parentActivityName="com.LeafApps.dragonboat.activities.CrewShowActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.LeafApps.dragonboat.activities.CrewShowActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

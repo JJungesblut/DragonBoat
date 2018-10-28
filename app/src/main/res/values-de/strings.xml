@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DragonBoat</string>
+    <string name="action_settings">Settings</string>
+    <!-- ADD test ids-->
+    <string name="banner_ad_unit_id">ca-app-pub-5628349226623187/7048479150</string>
+    <!--main-->
+    <string name="BtnGoToBoatSelect">DRACHENBOOT ANZEIGEN</string>
+    <string name="BtnGoToBoatInsert">BOOT UND BESATZUNG EINGEBEN</string>
+    <!-- boatshow  -->
+    <string name="title_activity_boats_show">Alle Boote</string>
+    <string name="delete_all">Alle löschen</string>
+    <string name="boatshowdelete_popup_title">Boot löschen</string>
+    <string name="boatshowdelete_popup_text_1">Wollen Sie das Boot</string>
+    <string name="boatshowdelete_popup_text_2">wirklich löschen?</string>
+    <string name="boatshowdelete_popup_text_3">Alle Boote löschen?</string>
+    <string name="OK">Weiter</string>
+    <string name="Cancel">Abbrechen</string>
+    <!-- error-->
+    <string name="noBoats">Es wurden noch keine Boote belegt.</string>
+    <!-- Strings für die Stopuhr -->
+    <string name="title_activity_chronometer">Stoppuhr</string>
+    <string name="timerVal">00:00:00</string>
+    <string name="pauseButtonLabel">PAUSE</string>
+    <string name="startButtonLabel">START</string>
+    <string name="SAVE">SPEICHERN</string>
+    <string name="reset">RESET</string>
+    <string name="BestTime">00:00:00</string>
+    <string name="besttime">BESTE\nZEIT</string>
+    <string name="currentime">AKTUELLE\nZEIT</string>
+    <!-- boatinsert  -->
+    <string name="title_activity_boat_insert">Boot erstellen</string>
+    <string name="BoatName">Bootsname</string>
+    <string name="TeamName">Teamname</string>
+    <string name="save_boat">Boot speichern</string>
+    <string name="BtnGoToBoatShow">Boote anzeigen</string>
+    <string name="noboatname">Kein Bootname</string>
+    <string name="noteamname">Kein Teamname</string>
+   <!-- crewshow  -->
+    <string name="title_activity_crew_show">Mannschaft</string>
+    <string name="photo_button">Photo</string>
+    <string name="sort">Sortiere</string>
+    <string name="paddler">Ruderer</string>
+    <string name="helmsman">Steuermann</string>
+    <string name="drummer">Trommler</string>
+    <string name="chronometerbtn">Stoppuhr</string>// das wird als popup angezeigt
+    <!--popup sort-crewmember-->
+    <string name="sort_crew">Sortiere Manschaftsmitglieder</string>
+    <string name="sort_text">Ein Vorschlag für die Sitzplatzbelegung wird erstellt.</string>
+    <!--popup create crewmember-->
+    <string name="addcrewmember_popup_title">Hinzufügen</string>
+    <string name="addcrewmember_popup_text">Mannschaftsmitglied angeben</string>
+    <string name="FirstName">Vorname</string>
+    <string name="LastName">Nachname</string>
+    <string name="Weight">Gewicht</string>
+    <string name="noFirstName">Vorname eingeben.</string>
+    <string name="noLastName">Nachname eingeben.</string>
+    <string name="noweight">Gewicht eingeben.</string>
+    <!--popup Photo-->
+    <string name="Choosepic">Wähle Bild</string>
+    <string name="photo_text">Aktuelles Bild ersetzen?</string>
+    <string name="photo_newphoto">NEU</string>
+
+    <string name="add_boat">Boot einfügen</string>
+    <string name="alert_new_best_time">Wollen Sie die Zeit als Bestzeit speichern?</string>
+
+
+
+
+
+
+    <!--<string name="title_activity_boat_select">Select a Boat</string>-->
+    <!-- <string name="title_activity_insertcrewmember">Crewmembers</string>-->
+
+    <!--<string name="noName">o. N.</string>  o. N. für ohne Name - noch initioalen ausdenken -->
+
+
+
+</resources>

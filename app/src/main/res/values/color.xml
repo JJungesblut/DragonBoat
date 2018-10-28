@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="background_main">#e6e7e8</color>
+      <color name="background_action">#473833</color>
+      <color name="white">#ffffff</color>
+      <color name="best_time">#096a95</color>
+      <color name="time">#27aeaf</color>
+</resources>

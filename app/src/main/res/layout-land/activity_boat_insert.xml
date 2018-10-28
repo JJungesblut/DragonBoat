@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".BoatInsert"
+    android:background="@drawable/bg_land_">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/BoatName"
+        android:ems="10"
+        android:id="@+id/boatname"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:maxLength="12"
+        android:layout_above="@+id/btnsaveboat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/TeamName"
+        android:ems="10"
+        android:id="@+id/teamname"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:maxLength="12"
+        android:layout_above="@+id/boatname"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="@string/BtnGoToBoatShow"
+        android:id="@+id/boatshow"
+        android:textSize="15sp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/selector"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <!--android:background="@drawable/selector"-->
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="@string/save_boat"
+        android:id="@+id/btnsaveboat"
+        android:textSize="15sp"
+        android:background="@drawable/selector"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/boatshow"
+        android:layout_alignLeft="@+id/boatshow"
+        android:layout_alignStart="@+id/boatshow"
+        android:textStyle="bold"/>
+    <!--android:background="@drawable/selector"-->
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
