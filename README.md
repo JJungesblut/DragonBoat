@@ -7,7 +7,9 @@ Load to your phone and install.
 
 # Technology
 Backend - Java
+
 Frontend - XML
+
 IDE - Android Studio
 
 # More Information
