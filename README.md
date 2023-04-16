@@ -12,5 +12,3 @@ Frontend - XML
 
 IDE - Android Studio
 
-# More Information
-http://dimitrirybak.de/2015/11/25/android-drachenboot/
